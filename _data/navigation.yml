@@ -1,12 +1,28 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Início do curso"
+    url: /curso/introducao/
+  - title: "Sobre"
+    url: /sobre/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+# Links do curso
+curso:
+  - title: Introdução
+    children:
+      - title: "Introdução"
+        url: /curso/introducao/
+      - title: "Preparando o ambiente"
+        url: /curso/preparando/
+  - title: Continuação...
+    children:
+      - title: "Introdução"
+        url: /curso/introducao/
+      - title: "Preparando o ambiente"
+        url: /curso/preparando/
+
