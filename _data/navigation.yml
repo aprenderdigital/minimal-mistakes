@@ -21,7 +21,7 @@ curso:
         url: /curso/preparando/
   - title: Continuação...
     children:
-      - title: "Introdução"
+      - title: "Preparação"
         url: /curso/introducao/
       - title: "Preparando o ambiente"
         url: /curso/preparando/

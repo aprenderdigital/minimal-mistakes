@@ -3,8 +3,6 @@ title: "Preparando o ambiente"
 permalink: /curso/preparando/
 excerpt: "Como preparar o ambiente para o curso."
 last_modified_at: 2019-05-10T15:53:52-04:00
-redirect_from:
-  - /theme-setup/
 toc: true
 ---
 
