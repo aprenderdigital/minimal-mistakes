@@ -1,10 +1,21 @@
 ---
-title: "Preparando o ambiente"
-permalink: /curso/preparando/
+title: "Deslogando"
+permalink: /curso/logoff/
 excerpt: "Como preparar o ambiente para o curso."
-last_modified_at: 2019-05-10T15:53:52-04:00
+last_modified_at: 2019-05-14T15:53:52-04:00
 toc: true
 ---
+
+Logout.
+
+<p>Drive API Quickstart</p>
+
+<!--Add buttons to initiate auth sequence and sign out-->
+<button id="authorize_button" style="display: none;">Authorize</button>
+<button id="signout_button" style="display: none;">Sign Out</button>
+
+<pre id="content" style="white-space: pre-wrap;"></pre>
+
 
 ## Installing the theme
 

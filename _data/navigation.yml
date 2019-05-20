@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Início do curso"
-    url: /curso/introducao/
+    url: /curso/apresentacao/
   - title: "Sobre"
     url: /sobre/
   # - title: "Sample Posts"
@@ -15,11 +15,13 @@ main:
 curso:
   - title: Introdução
     children:
-      - title: "Introdução"
-        url: /curso/introducao/
+      - title: "Apresentação"
+        url: /curso/apresentacao/
       - title: "Preparando o ambiente"
         url: /curso/preparando/
-  - title: Continuação...
+      - title: "Logout"
+        url: /curso/logoff/
+  - title: Continuação1...
     children:
       - title: "Preparação"
         url: /curso/introducao/
