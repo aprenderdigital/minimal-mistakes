@@ -19,12 +19,9 @@ curso:
         url: /curso/apresentacao/
       - title: "Preparando o ambiente"
         url: /curso/preparando/
-      - title: "Logout"
-        url: /curso/logoff/
-  - title: Continuação1...
+  - title: Gerando os primeiros livros
     children:
-      - title: "Preparação"
-        url: /curso/introducao/
-      - title: "Preparando o ambiente"
-        url: /curso/preparando/
-
+      - title: "Geração individual"
+        url: /curso/individual/
+      - title: "Geração para a turma"
+        url: /curso/turma/
