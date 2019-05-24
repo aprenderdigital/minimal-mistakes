@@ -1,0 +1,50 @@
+<script>
+
+  function setSigninStatus(isSignedIn) {
+        var user = GoogleAuth.currentUser.get();
+        var isAuthorized = user.hasGrantedScopes(SCOPE);
+        console.log("setSigninStatus");
+        if (isAuthorized) {
+          checkCourse(cursoVerificado);
+        } else {
+          $('#no-login-register').css('display', 'inline-block'); 
+          $('#no-login').css('display', 'block'); 
+          $('#no-register').css('display', 'none'); 
+        }
+  }
+  
+  function cursoVerificado(resp) {
+    var user = GoogleAuth.currentUser.get();
+    if (resp) {
+      console.log("cursoVerificado:true");
+      $('#no-login-register').css('display', 'none'); 
+      $('#no-register').css('display', 'none'); 
+      $('#no-login').css('display', 'none'); 
+    }
+    else {
+      console.log("cursoVerificado:false");
+      $('#userEmail1').html(user.getBasicProfile().getEmail());
+      $('#no-login-register').css('display', 'inline-block'); 
+      $('#no-login').css('display', 'none'); 
+      $('#no-register').css('display', 'block'); 
+    }
+  }
+</script>
+
+<div id="no-login-register" class="no-login" style="display: none">
+  <div id="no-login" class="no-login-dlg" style="display: none">
+    <p style="text-align: center">Para acessar esta página você precisa estar matriculado no curso <b>Livros Personalizados</b>.</p>
+    <div style="text-align: center">
+      <button id="sign-in-or-out-button"
+                style="margin-left: 25px"
+                onClick="handleAuthClick()">Faça o login na sua conta Google
+      </button>
+    </div>
+  </div>
+  <div id="no-register" class="no-register-dlg" style="display: none">
+    <p style="text-align: center">Neste momento você está acessando este material usando a conta <b><spam style="color:greenyellow" id='userEmail1'></spam>.</b>
+    Se este não é o seu e-mail <a class="no-regeister-dlg" onClick="handleAuthClick()">clique aqui</a>.
+    Para acessar esta página você precisa estar matriculado no curso <b>Livros Personalizados</b>.</p>
+    <p style="text-align: center">Verificamos a sua conta e o curso <spam style="color:greenyellow">NÃO está habilitado</spam>. Se você já se matriculou, entre em contato para regularizar o seu acesso.</p>
+  </div>
+</div>

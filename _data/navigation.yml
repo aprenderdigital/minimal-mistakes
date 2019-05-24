@@ -23,5 +23,5 @@ curso:
     children:
       - title: "Geração individual"
         url: /curso/individual/
-      - title: "Geração para a turma"
+      - title: "Geração para uma turma"
         url: /curso/turma/

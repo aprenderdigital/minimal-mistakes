@@ -67,7 +67,7 @@ O processo para criar a sua conta é simples. Se quiser ver como se faz, assista
 <div id="Habilitar-logado" style="display: none">
   <p>Se você já tem uma conta no Google você precisa habilitá-la para poder utilizar este material do curso.</p>
 
-  <p>Neste momento você está está acessando este material usando a conta <b><spam id='userEmail1'></spam></b>. Se este não é o seu e-mail <a onClick="handleAuthClick()">clique aqui</a>. Para verificar se a sua conta já foi liberada para acessar o material do curso clique no botão abaixo.</p>
+  <p>Neste momento você está acessando este material usando a conta <b><spam id='userEmail1'></spam></b>. Se este não é o seu e-mail <a onClick="handleAuthClick()">clique aqui</a>. Para verificar se a sua conta já foi liberada para acessar o material do curso clique no botão abaixo.</p>
 
   <div style="text-align: center">
     <button id="check-course-button"
