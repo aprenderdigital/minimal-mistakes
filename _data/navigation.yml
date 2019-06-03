@@ -25,3 +25,5 @@ curso:
         url: /curso/individual/
       - title: "Geração para uma turma"
         url: /curso/turma/
+      - title: "Envio dos livros por e-mail"
+        url: /curso/email/

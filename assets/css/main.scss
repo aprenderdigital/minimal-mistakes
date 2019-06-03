@@ -39,3 +39,22 @@ div.no-register-dlg {
 a.no-regeister-dlg  {
  color: greenyellow;
 }
+
+div.box-drive {
+    background-color: gray;
+    position:relative;
+    width: 100%;
+    height: 450px;
+}
+
+a.box-drive {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+div.box-drive-content {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    //margin: auto;
+    //transform: perspective(1px) translateY(-50%);
+}

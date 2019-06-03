@@ -1,0 +1,22 @@
+<script>
+
+  function checkFile(file, f) {
+    if (GoogleAuth.isSignedIn.get()) {
+      gapi.client.drive.files.list({ q: "name='" + file + "'" })
+        .then(function (response) {
+          // Handle the results here (response.result has the parsed body).
+          if (response.result.files.length > 0) f(response.result.files[0].id);
+          else f("NOT-FILE");
+        },
+          function (err) {
+            console.error("checkFile() - gapi.client.drive.files.list - Execute error", err);
+          }
+        );
+    }
+    else {
+      console.log("checkFile(): não está logado");
+      f("NOT-LOG");// callback indicando que não está logado
+    }
+  }
+
+</script>

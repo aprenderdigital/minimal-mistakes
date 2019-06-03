@@ -1,8 +1,8 @@
 ---
-title: "Geração para uma turma"
-permalink: /curso/turma/
-excerpt: "Gerando livros para toda uma turma"
-last_modified_at: 2019-05-22T11:47:50-04:00
+title: "Enviando livros por e-mail"
+permalink: /curso/email/
+excerpt: "Enviando os livros gerados por email"
+last_modified_at: 2019-06-03T11:47:50-04:00
 toc: true
 google: true
 ---
@@ -10,6 +10,7 @@ google: true
 {% include check-registration.html %} 
 {% include find-file.html %}
 
+%%% escrever sobre o processo de envio dos links da planilha por e-mail %%%%
 
 No capítulo [Geração individual]({{site.url}}/curso/individual) mostramos como gerar o livro para um único aluno. Neste capítulo também vamos usar o livro **O Nome da Gente** entretanto, gerando de uma única vez livros personalizados para toda uma turma.
 
@@ -48,10 +49,7 @@ Para que o processo de geração aconteça, você vai ter que fornecer alguns da
 - Para (nome do aluno que vai receber o livro - usar no máximo 15 letras)
 - genero (dele ou dela)
 
-As colunas link e link resumido são gerados automaticamete pela planilha.
-
-Preencha a planilha abaixo com os dados dos alunos da sua turma.
-
+As colunas link e link resumido são gerados automaticamete pela planilha. 
 <script>
 var linkPlanilha;
 
@@ -95,6 +93,4 @@ function expandIframe() {
     </div>
   </div>
 </spam>
-
-Depois do preenchimento, você deve usar a opção de menu chamada **DNLI** presente na planilha acima para gerar os links.
 
