@@ -2,95 +2,51 @@
 title: "Enviando livros por e-mail"
 permalink: /curso/email/
 excerpt: "Enviando os livros gerados por email"
-last_modified_at: 2019-06-03T11:47:50-04:00
+last_modified_at: 2019-06-06T11:47:50-04:00
 toc: true
-google: true
+google: false
 ---
 
 {% include check-registration.html %} 
 {% include find-file.html %}
 
-%%% escrever sobre o processo de envio dos links da planilha por e-mail %%%%
+Neste capítulo vamos mostrar como é possível mandar por e-mail o link para acesso ao livro digital gerado para cada aluno da turma. Como pré-requisito você deverá ter preenchido e gerado os links da planilha apresentada no capítulo [Geração para uma turma]({{site.url}}/curso/turma).
 
-No capítulo [Geração individual]({{site.url}}/curso/individual) mostramos como gerar o livro para um único aluno. Neste capítulo também vamos usar o livro **O Nome da Gente** entretanto, gerando de uma única vez livros personalizados para toda uma turma.
-
-**Nota:** O livro **O Nome da Gente** faz parte do banco de livros online e gratuito que é mantido pela nossa equipe do **APRENDER.digital** como parte do projeto **Dia Nacional do Livro Infantil ([DNLI](https://dnli.aprender.digital){:target="_blank"})**.
-{: .notice--warning}
-
+Para o envio do e-mail nós vamos usar o **Google Docs** e o complemento chamado **Zoho**.
 Continue lendo abaixo. Vamos mostrar para você como isso funciona. 
 
-## Links para os livros
-Não sei se no capítulo em que apresentamos a [Geração individual]({{site.url}}/curso/individual) dos livros você observou o conteúdo do link gerado em cada livro personalizado. 
+## Passo a passo para envio por e-mail
+Para enviar os links por e-mail você deverá realizar os passos indicados abaixo:
+1. Conferir se todos os e-mails da sua planilha foram preenchidos corretamente. Você encontra a planilha no capítulo [Geração para uma turma]({{site.url}}/curso/turma){:target="_blank"}.
+1. Criar um [novo documento](http://doc.new){:target="_blank"} no **Google Docs**.
+1. Preencher o documento com o texto que fará parte do corpo (ou conteúdo) do e-mail. Um exemplo de texto para o seu e-mail:
+    * Você está recebendo um livro digital muito especial, O Nome da Gente, que foi pensado com carinho para unir o prazer da leitura ao processo de alfabetização e, assim, contribuir com o momento em que a criança está descobrindo o mundo das letras e das palavras.<br />
+    Acesso o livro aqui:<br /> <br />
+    Obrigado e curta muito.
+1. O processo de organização e envio por e-mail será feito pelo complemento gratuito chamado **Zoho: Craft, Send, and Track with Mail Merge**.
+    1. Os complementos são instalados por meio do menu "Complementos \| Instalar complementos...".
+    1. Pesquisar pelo complemento **Zoho**.
+    . Após a pesquisa pelo complemento, pressionar o botão **GRÁTIS**.
+    1. Seguir passo a passo para autorizar a instalação do complemento **Zoho**.
+1. Iniciar processo de geração do envio dos e-mails (*mail merge*).
+    1. Acessar menu "Complementos \| Zoho: Craft, Send, and Track with Mail Merge \| Start Mail Merge".
+1. Preencha os dados solicitados pelo **Zoho**.
+    1. Data source -> Escolher **Google Sheet**.
+    1. Select a document to merge -> **Current Document**.   
+    1. Pressionar o botão **All Set, GO**.
+    1. Pressione o botão **Select a Sheet**.
+    1. Busque a planilha com o nome **Livros para uma turma (124578)**.
+    1. Clique sobre o nome do arquivo e depois pressione o botão **Select**.
+1. Selecione as colunas que serão usadas no texto do e-mail.
+    1. Select Sheet -> Escolher a planilha com a turma desejada.
+    1. Merge Fields -> Clique sobre as colunas e perceba a sua inclusão dentro do texto.
+    1. Email To Column -> Certifique-se que a coluna selecionada seja a que contém a lista de e-mails cadastrados.
+1. Pressione o botão **RUN MAIL MERGE**.
+    1. Subject -> Título do e-mail que será enviado.
+    1. To -> Selecionar lista de e-mails que receberão a mensagem.   
+    1. Pressione o botão **ADD RECEPIENTS**.
+1. Confira um exemplo por maio do botão **PREVIEW**.
+1. Envie as mensagens pressionando o botão **SEND NOW**.  
 
-Por exemplo, para o nome "JULIA" o link do livro gerado é o seguinte:
-
-> https://livros.aprender.digital/ONomeDaGente.html?nome=**JULIA**&deleDela=**dela**
-
-Isso nos permite um truque. Para gerarmos livros com nomes diferentes, basta criarmos links com parâmetros diferentes. :wink:  Por exemplo, livros para a Ana, Paula e Ari podem ser gerados diretamente por meio dos links: 
-
-> .../ONomeDaGente.html?nome=**ANA**&deleDela=**dela**
-
-> .../ONomeDaGente.html?nome=**PAULA**&deleDela=**dela**
-
-> .../ONomeDaGente.html?nome=**ARI**&deleDela=**dele**
-
-Achou complicado? Não se preocupe. Preparamos para você uma planilha que vai gerar estes links automaticamente para você. :smile: 
-
-Confira no tópico apresentado a seguir.
-
-## Planilha para geração dos links
-Preparamos uma planilha muito especial que vai gerar *automagicamente* :wink: *links* do livro **O Nome da Gente** para todos os alunos das suas turmas.
-
-
-Para que o processo de geração aconteça, você vai ter que fornecer alguns dados dos seus alunos:
-- email (opcional)
-- telefone (opcional)
-- De (nome do professor que vai aparecer no livro)
-- Para (nome do aluno que vai receber o livro - usar no máximo 15 letras)
-- genero (dele ou dela)
-
-As colunas link e link resumido são gerados automaticamete pela planilha. 
-<script>
-var linkPlanilha;
-
-function carregarPlanilha() {
-  checkFile('Livros para uma turma (124578)', callbackCarregarPlanilha);
-}
-function callbackCarregarPlanilha(s) {
-
-  if (s == "NOT-LOG" || s == "NOT-FILE") {
-      console.log("callbackCarregarPlanilha()", s);
-      return;
-  }
-
-  linkPlanilha = "https://docs.google.com/spreadsheets/d/" + s + "/edit?usp=sharing";
-  var sHTML = 
-  '<header style=" text-align: right">' + 
-  '  <a href="javascript:reloadIframe()" alt="Recarregar"><i class="fas fa-redo"></i></a>' +
-  '   &nbsp;' +
-  '  <a href="javascript:expandIframe()" alt="Expandir"><i class="fas fa-external-link-alt"></i></a>' +
-  '</header>' +
-  '<div class="box-drive">' + 
-  '  <iframe id="iframe-planilha" width="100%" height="100%" src="' + linkPlanilha + '"></iframe>' +
-  '</div>';
-  document.getElementById('planilha').innerHTML = sHTML;
-}
-
-function reloadIframe() {
-  document.getElementById('iframe-planilha').src = linkPlanilha;
-}
-
-function expandIframe() {
-  window.open(linkPlanilha,"_blank");
-}
-</script>
-
-<spam id="planilha">
-  <div class="box-drive">
-    <div class = "box-drive-content">
-        <a class = "box-drive" href="javascript:carregarPlanilha()" alt="Carregar"><i class="fas fa-redo"></i>
-        <br />Carregar conteúdo.</a>
-    </div>
-  </div>
-</spam>
-
+**Dica:** Coloque como último e-mail da turma o seu endereço de e-mail. Desta forma você receberá uma cópia do e-mail tendo a confirmação que o processode envio foi totalmente concluído.
+{: .notice--warning}

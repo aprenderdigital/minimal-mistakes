@@ -2,7 +2,7 @@
 title: "Geração para uma turma"
 permalink: /curso/turma/
 excerpt: "Gerando livros para toda uma turma"
-last_modified_at: 2019-05-22T11:47:50-04:00
+last_modified_at: 2019-06-06T15:47:50-04:00
 toc: true
 google: true
 ---
@@ -96,5 +96,17 @@ function expandIframe() {
   </div>
 </spam>
 
-Depois do preenchimento, você deve usar a opção de menu chamada **DNLI** presente na planilha acima para gerar os links.
+Depois do preenchimento, você deve usar a opção de menu chamada **DNLI**, presente na planilha acima, para gerar os links.
 
+## Mais de uma turma
+Caso tenha mais de uma turma, você deve preecher uma planilha por turma. Você pode usar a mesma planilha apresentada acima ou usar o botão <i class="fas fa-external-link-alt"></i>, que fica no topo da planilha, para abri-la expandida em uma nova aba do navegador.
+
+Para preencher os dados da segunda turma, siga os passos abaixo:
+1. Pressione o ícone <i class="fas fa-sort-down"></i> que fica ao lado da palavra "Página1".
+1. Escolha a opção "Duplicar".
+1. Preencha a nova planilha chamada "Cópia de Página1".
+1. Para alterar o nome de cada aba da planilha com o nome da sua turma use a opção "Renomear..." disponível no ícone <i class="fas fa-sort-down"></i>.
+1. A geração dos links continua sendo feita por meio do menu "DNLI \| Gerar links". Ele deve ser executado separadamente na planilha de cada turma.
+<p align="middle">
+<img  width="400" height="100%" src="/assets/images/curso/duplicar_e_renomear.gif">
+</p>
