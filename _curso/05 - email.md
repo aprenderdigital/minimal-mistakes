@@ -18,17 +18,13 @@ Continue lendo abaixo. Vamos mostrar para você como isso funciona.
 ## Passo a passo para envio por e-mail
 Para enviar os links por e-mail você deverá realizar os passos indicados abaixo:
 1. Conferir se todos os e-mails da sua planilha foram preenchidos corretamente. Você encontra a planilha no capítulo [Geração para uma turma]({{site.url}}/curso/turma){:target="_blank"}.
-1. Criar um [novo documento](http://doc.new){:target="_blank"} no **Google Docs**.
+1. O processo de organização e envio por e-mail será feito pelo complemento gratuito chamado **Zoho: Craft, Send, and Track with Mail Merge**.
+    1. Clique [neste link](https://chrome.google.com/webstore/detail/zoho-craft-send-and-track/gcmpegnpnldbkaaijmcibgofgpgidlid){:target="_blank"} e siga o passo a passo para autorizar a instalação do complemento **Zoho**.
+    1. Caso já tenho o complemento instalado apenas crie um novo documento um [novo documento](http://doc.new){:target="_blank"} no **Google Docs**.
 1. Preencher o documento com o texto que fará parte do corpo (ou conteúdo) do e-mail. Um exemplo de texto para o seu e-mail:
     * Você está recebendo um livro digital muito especial, O Nome da Gente, que foi pensado com carinho para unir o prazer da leitura ao processo de alfabetização e, assim, contribuir com o momento em que a criança está descobrindo o mundo das letras e das palavras.<br />
     Acesso o livro aqui:<br /> <br />
     Obrigado e curta muito.
-1. O processo de organização e envio por e-mail será feito pelo complemento gratuito chamado **Zoho: Craft, Send, and Track with Mail Merge**.
-    1. Clique [neste link](https://chrome.google.com/webstore/detail/zoho-craft-send-and-track/gcmpegnpnldbkaaijmcibgofgpgidlid){:target="_blank"} e siga o passo a passo para autorizar a instalação do complemento **Zoho**.
-    1. Os complementos são instalados por meio do menu "Complementos \| Instalar complementos...".
-    1. Pesquisar pelo complemento **Zoho**.
-    1. Após a pesquisa pelo complemento, pressionar o botão **GRÁTIS**.
-    1. Seguir passo a passo para autorizar a instalação do complemento **Zoho**.
 1. Iniciar processo de geração do envio dos e-mails (*mail merge*).
     1. Acessar menu "Complementos \| Zoho: Craft, Send, and Track with Mail Merge \| Start Mail Merge".
 1. Preencha os dados solicitados pelo **Zoho**.
