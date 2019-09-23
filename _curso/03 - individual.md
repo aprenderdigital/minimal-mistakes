@@ -2,7 +2,7 @@
 title: "Geração individual"
 permalink: /curso/individual/
 excerpt: "Gerando livros individualmente"
-last_modified_at: 2019-05-20T14:57:50-04:00
+last_modified_at: 2019-09-23T14:57:50-04:00
 toc: true
 ---
 
@@ -31,7 +31,7 @@ Então, mãos a obra. Vamos gerar o primeiro livro personalizado. Para facilitar
 
 Como preencher o formulário:
 1. Primeiro preencha o campo "Nome" com o seu nome ou o nome de quem vai receber o livro. Digite um nome com até 15 letras. Sugerimos usar o nome sem o sobrenome. Por exemplo: Julia, Ana Cláudia, Felipe.
-2. Clique sobre a frase que melhor combina com a pessoa que vai receber o livro, ou seja, se o processo de geração vai usar o gênero feminino ou masculinho.
+1. Clique sobre a frase que define a pessoa que vai receber o livro: gênero feminino ou masculino.
 3. Pressione o botão **GERAR LIVRO**.   
 
 <script>
@@ -61,7 +61,7 @@ Execute os passos apresentados a seguir usando a janela do livro que apresentamo
 
 1. Para gerar um novo livro pressione o botão <i class="fas fa-redo"></i>. Se quiser usar o livro gerado, pule este passo.
 1. Preencha o campo "Nome" com o seu nome ou o nome de quem vai receber o livro digital. Digite um nome com até 15 letras. Sugerimos usar o nome sem o sobrenome. Por exemplo: Julia, Ana Cláudia, Felipe.
-1. Clique sobre a frase que melhor combina com a pessoa que vai receber o livro, ou seja, se o processo de geração vai usar o gênero feminino ou masculinho.
+1. Clique sobre a frase que define a pessoa que vai receber o livro: gênero feminino ou masculino.
 1. Pressione o botão **GERAR LIVRO**.
 1. Pressione o botão <i class="fas fa-external-link-alt"></i>. Uma nova janela do seu navegador será aberta contendo o livro gerado.
 1. Copie o endereço apresentado pelo navegador:

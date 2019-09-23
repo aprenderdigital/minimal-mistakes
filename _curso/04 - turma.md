@@ -2,7 +2,7 @@
 title: "Geração para uma turma"
 permalink: /curso/turma/
 excerpt: "Gerando livros para toda uma turma"
-last_modified_at: 2019-06-06T15:47:50-04:00
+last_modified_at: 2019-09-23T15:47:50-04:00
 toc: true
 google: true
 ---
@@ -42,15 +42,15 @@ Preparamos uma planilha muito especial que vai gerar *automagicamente* :wink: *l
 
 
 Para que o processo de geração aconteça, você vai ter que fornecer alguns dados dos seus alunos:
-- email (opcional)
-- telefone (opcional)
-- De (nome do professor que vai aparecer no livro)
-- Para (nome do aluno que vai receber o livro - usar no máximo 15 letras)
-- genero (dele ou dela)
+- email (pais ou responsáveis caso os livros sejam compartilhados por e-mail);
+- telefone (opcional);
+- De (nome do professor que vai aparecer no livro);
+- Para (nome do aluno que vai receber o livro - usar no máximo 15 letras);
+- gênero (dele ou dela).
 
-As colunas link e link resumido são gerados automaticamete pela planilha.
+As colunas <b>link</b> e <b>link resumido</b> são gerados automaticamente pela planilha.
 
-Preencha a planilha abaixo com os dados dos alunos da sua turma.
+Preencha diretamente na planilha abaixo os dados dos alunos da sua turma. 
 
 <script>
 var linkPlanilha;
@@ -96,7 +96,11 @@ function expandIframe() {
   </div>
 </spam>
 
-Depois do preenchimento, você deve usar a opção de menu chamada **DNLI**, presente na planilha acima, para gerar os links.
+<br>
+Depois do preenchimento, você deve usar a opção de menu chamada **LINK**, presente na planilha acima, para gerar os links. Use o botão <i class="fas fa-external-link-alt"></i>, que fica no topo da planilha, para abri-la expandida em uma nova aba do navegador para facilitar o acesso ao menu <b>LINK</b> e a opção <b>Gerar links</b>.
+<p align="middle">
+<img  width="400" height="100%" src="/assets/images/curso/menu_link.gif">
+</p>
 
 ## Mais de uma turma
 Caso tenha mais de uma turma, você deve preecher uma planilha por turma. Você pode usar a mesma planilha apresentada acima ou usar o botão <i class="fas fa-external-link-alt"></i>, que fica no topo da planilha, para abri-la expandida em uma nova aba do navegador.
@@ -106,7 +110,7 @@ Para preencher os dados da segunda turma, siga os passos abaixo:
 1. Escolha a opção "Duplicar".
 1. Preencha a nova planilha chamada "Cópia de Página1".
 1. Para alterar o nome de cada aba da planilha com o nome da sua turma use a opção "Renomear..." disponível no ícone <i class="fas fa-sort-down"></i>.
-1. A geração dos links continua sendo feita por meio do menu "DNLI \| Gerar links". Ele deve ser executado separadamente na planilha de cada turma.
+1. A geração dos links continua sendo feita por meio do menu "LINKS \| Gerar links". Ele deve ser executado separadamente na planilha de cada turma.
 <p align="middle">
 <img  width="400" height="100%" src="/assets/images/curso/duplicar_e_renomear.gif">
 </p>

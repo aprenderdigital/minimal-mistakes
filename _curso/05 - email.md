@@ -24,9 +24,10 @@ Para enviar os links por e-mail você deverá realizar os passos indicados abaix
     Acesso o livro aqui:<br /> <br />
     Obrigado e curta muito.
 1. O processo de organização e envio por e-mail será feito pelo complemento gratuito chamado **Zoho: Craft, Send, and Track with Mail Merge**.
+    1. Clique [neste link](https://chrome.google.com/webstore/detail/zoho-craft-send-and-track/gcmpegnpnldbkaaijmcibgofgpgidlid){:target="_blank"} e siga o passo a passo para autorizar a instalação do complemento **Zoho**.
     1. Os complementos são instalados por meio do menu "Complementos \| Instalar complementos...".
     1. Pesquisar pelo complemento **Zoho**.
-    . Após a pesquisa pelo complemento, pressionar o botão **GRÁTIS**.
+    1. Após a pesquisa pelo complemento, pressionar o botão **GRÁTIS**.
     1. Seguir passo a passo para autorizar a instalação do complemento **Zoho**.
 1. Iniciar processo de geração do envio dos e-mails (*mail merge*).
     1. Acessar menu "Complementos \| Zoho: Craft, Send, and Track with Mail Merge \| Start Mail Merge".

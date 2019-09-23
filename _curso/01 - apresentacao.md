@@ -21,6 +21,5 @@ Este eBook tem como foco principal educadores que trabalham com alunos em fase d
   - Software de apresentação (ex.: PowerPoint ou Google Slides).
 - Recursos:
   - Computador conectado à Internet;
-  - Navegador Chrome atualizado;
-  - Estar matriculado no curso.
+  - Navegador Chrome atualizado.
 
