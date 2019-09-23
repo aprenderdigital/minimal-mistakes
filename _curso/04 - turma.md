@@ -56,7 +56,7 @@ Preencha a planilha abaixo com os dados dos alunos da sua turma.
 var linkPlanilha;
 
 function carregarPlanilha() {
-  checkFile('Livros para uma turma (124578)', callbackCarregarPlanilha);
+  checkFile(nomePlanilhaCurso, callbackCarregarPlanilha);
 }
 function callbackCarregarPlanilha(s) {
 

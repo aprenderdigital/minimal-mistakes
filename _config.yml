@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "pt-BR"
-title                    : "Curso - Livros Personalizados"
+title                    : "eBook - Livros Personalizados"
 title_separator          : "-"
 name                     : "APRENDER.digital"
 description              : "Curso sobre personalização de livros - Versão DNLI2019"

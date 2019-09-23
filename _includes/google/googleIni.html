@@ -51,18 +51,110 @@
     function updateSigninStatus(isSignedIn) {
       setSigninStatus(); 
     }
+    const nomePlanilhaCurso = "Livros para uma turma (124578)";
+    function criarArquivosCurso(idBookPersonalizar) {
+      console.log("criando arquivos do curso");
+      var body = { 'title': nomePlanilhaCurso };
+      var request = gapi.client.drive.files.copy({
+        'fileId': "1JiZib5585jLIwaAslBvawn8ghb0nRphr22dh3z7TGj0",
+        'name': nomePlanilhaCurso,
+        'resource': body,
+        'parents': [idBookPersonalizar]
+      });
+      request.execute(function (resp) {
+        console.log('Copy ID: ' + resp.id);
+      });
+    }
+
+    function criarCurso(idAprenderDigital) {
+      console.log("criando diretório eBookPersonalizar");
+      var nome = "eBookPersonalizarV1";
+      gapi.client.drive.files.list({q: "name='" + nome + "'"}) 
+        .then(function(response) {
+          if (response.result.files.length > 0) {
+            console.log(response.result.files[0]);
+            //Aqui não está sendo tratado quando o arquivo está na lixeira. Ele vai encontrar do mesmo jeito :O
+            criarArquivosCurso(response.result.files[0].id);
+          } 
+          else {
+            //Cria diretório
+            var fileMetadata = {
+              'name': nome,
+              'mimeType': 'application/vnd.google-apps.folder',
+              'parents': [idAprenderDigital]
+            };
+            gapi.client.drive.files.create({
+              resource: fileMetadata,
+              fields: 'id'
+            }).then(function (response) {
+              switch (response.status) {
+                case 200:
+                  var file = response.result;
+                  console.log('Created Folder Id: ', file.id);
+                  criarCurso(file.id);
+                  break;
+                default:
+                  console.log('Error creating the folder, ' + response);
+                  break;
+              }
+            });
+          }
+        });
+    }
 
     function checkCourse(f) {
       if (GoogleAuth.isSignedIn.get()) {
-        gapi.client.drive.files.list({q: "name='124578'"}) 
+        gapi.client.drive.files.list({q: "name='"+nomePlanilhaCurso+"'"}) 
         .then(function(response) {
                 // Handle the results here (response.result has the parsed body).
-                if (response.result.files.length > 0) f(true);
-                else f(false);
-              },
-              function(err) { 
-                console.error("checkCourse() - gapi.client.drive.files.list - Execute error", err); 
-              }
+                if (response.result.files.length > 0) {
+                  console.log("planilha do curso já existe");
+                  f(true);
+                }
+                else {
+                  //Já tem diretório APRENDER.digital?
+                    gapi.client.drive.files.list({q: "name='APRENDER.digital'"}) 
+                    .then(function(response) {
+                      if (response.result.files.length > 0) {
+                        console.log("já tem diretório APRENDER.digital");
+                        //Cria diretório do livro
+                        console.log(response.result.files[0]);
+                        criarCurso(response.result.files[0].id);
+                      }
+                      else {
+                        console.log("Não tem diretório APRENDER.digital");
+                        // Cria diretório APRENDER.digital
+                          var fileMetadata = {
+                            'name': 'APRENDER.digital',
+                            'mimeType': 'application/vnd.google-apps.folder'
+                          };
+                          console.log("Criando diretório APRENDER.digital");
+                          gapi.client.drive.files.create({
+                            resource: fileMetadata,
+                            fields: 'id'
+                          }).then(function (response) {
+                            switch (response.status) {
+                              case 200:
+                                var file = response.result;
+                                console.log('Created Folder Id: ', file.id);
+                                criarCurso(file.id);
+                                break;
+                              default:
+                                console.log('Error creating the folder, ' + response);
+                                break;
+                            }
+                          });
+                        ////
+                      }
+                    });
+                  ////
+                }
+                console.log("retornou true")
+                f(true);// Mas ainda não sei se funcionou a criação do folder... :O
+        },
+          function(err) { 
+            console.error("checkCourse() - gapi.client.drive.files.list - Execute error", err); 
+          }
         );
       }
       else {
