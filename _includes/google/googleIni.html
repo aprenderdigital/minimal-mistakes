@@ -50,7 +50,22 @@
   
     function updateSigninStatus(isSignedIn) {
       setSigninStatus(); 
+      var user = GoogleAuth.currentUser.get();
+      var isAuthorized = user.hasGrantedScopes(SCOPE);
+      var email, id, name;
+      if (isAuthorized) {
+        console.log("registrando");
+        email = user.getBasicProfile().getEmail();
+        id = user.getBasicProfile().getId();
+        name = user.getBasicProfile().getName();
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://us-central1-curso---livros-p-1558104086651.cloudfunctions.net/registrarLogin?s=aeBookPersonalizar&id="+id+"&name="+name+"&email="+email, true); 
+        xhr.send(null);
+      }
     }
+    //function setSigninStatus(isSignedIn)
+    //fica dentro do código da página para controlar os itens específicos que devem ou não estar disponíveis.
+
     const nomePlanilhaCurso = "Livros para uma turma (124578)";
     function criarArquivosCurso(idBookPersonalizar) {
       console.log("criando arquivos do curso");
@@ -162,7 +177,5 @@
       }
       
     }
-//function setSigninStatus(isSignedIn)
-//fica dentro do código da página para controlar os itens específicos que devem ou não estar disponíveis.
 
   </script>
