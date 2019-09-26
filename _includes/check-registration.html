@@ -35,10 +35,9 @@
   <div id="no-login" class="no-login-dlg" style="display: none">
     <p style="text-align: center">Para acessar esta página você precisa estar logado na sua conta <b>Google</b>.</p>
     <div style="text-align: center">
-      <button id="sign-in-or-out-button"
-                style="margin-left: 25px"
-                onClick="handleAuthClick()">Faça o login na sua conta Google
-      </button>
+      <a id="sign-in-or-out-button" style="cursor:pointer">
+        <img src="/assets/images/login_google.png" onclick="handleAuthClick()">
+      </a>
     </div>
   </div>
   <div id="no-register" class="no-register-dlg" style="display: none">

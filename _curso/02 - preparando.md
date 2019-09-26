@@ -57,10 +57,9 @@ O processo para criar a sua conta é simples. Se quiser ver como se faz, assista
   <p>Se você já tem uma conta no Google você precisa habilitá-la para poder utilizar este eBook. Para sabermos se a sua conta do Google já foi habilitada para utilizar este material clique no botão abaixo.</p>
 
   <div style="text-align: center">
-    <button id="sign-in-or-out-button"
-            style="margin-left: 25px"
-            onClick="handleAuthClick()">Faça o login na sua conta Google
-    </button>
+    <a id="sign-in-or-out-button" style="cursor:pointer">
+      <img src="/assets/images/login_google.png" onclick="handleAuthClick()">
+    </a>
   </div>
 </div>
 

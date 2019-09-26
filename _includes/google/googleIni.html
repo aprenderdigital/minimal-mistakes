@@ -18,7 +18,7 @@
       gapi.client.init({
           'apiKey': '',
           'discoveryDocs': [discoveryUrl],
-          'clientId': '129104259490-61g6fna8aosjd3tce943m92lpcdod4ap.apps.googleusercontent.com',
+          'clientId': '904912626802-n83jojujgr5mdqjlt19grdnh7vucrtuc.apps.googleusercontent.com',
           'scope': SCOPE
       }).then(function () {
         GoogleAuth = gapi.auth2.getAuthInstance();
@@ -59,7 +59,7 @@
         id = user.getBasicProfile().getId();
         name = user.getBasicProfile().getName();
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://us-central1-curso---livros-p-1558104086651.cloudfunctions.net/registrarLogin?s=aeBookPersonalizar&id="+id+"&name="+name+"&email="+email, true); 
+        xhr.open("GET", "https://us-central1-ebook-livros-personalizados.cloudfunctions.net/registrarLogin?s=aeBookPersonalizar&id="+id+"&name="+name+"&email="+email, true); 
         xhr.send(null);
       }
     }
