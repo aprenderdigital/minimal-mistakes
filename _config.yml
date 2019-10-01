@@ -19,7 +19,7 @@ locale                   : "pt-BR"
 title                    : "eBook - Livros Personalizados"
 title_separator          : "-"
 name                     : "APRENDER.digital"
-description              : "Curso sobre personalização de livros - Versão DNLI2019"
+description              : "eBook sobre personalização de livros - Versão DNLI2019"
 url                      : https://personalizar.aprender.digital # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Parahuari Branco (Parau)"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Curso sobre personalização de livros - Versão DNLI2019"
+  bio              : "eBook sobre personalização de livros - Versão DNLI2019"
   location         : "CWB"
   email            :
   links:
