@@ -43,7 +43,7 @@ function cursoVerificado(resp) {
 
 
 ## Conta no Google
-Para participar deste curso é necessário que você tenha uma **conta no Google**. Se você usa o **Gmail**, então você já está pronto. Use o seu login e senha do Gmail para ter acesso aos materiais e ferramentas que serão utilizados durante o curso.
+Para utilizar este eBook é necessário que você tenha uma **conta no Google**. Se você usa o **Gmail**, então você já está pronto. Use o seu login e senha do Gmail para ter acesso aos materiais e ferramentas que serão apresentados.
 
 Não tem tem conta no Google? Não usa Gmail? Não tem problema, você pode criar uma conta gratuita [aqui](https://accounts.google.com/SignUp?hl=pt_BR&continue=https://myaccount.google.com/intro){:target="_blank"}.
 
@@ -64,7 +64,7 @@ O processo para criar a sua conta é simples. Se quiser ver como se faz, assista
 </div>
 
 <div id="Habilitar-logado" style="display: none">
-  <p>Se você já tem uma conta no Google você precisa habilitá-la para poder utilizar este material do curso.</p>
+  <p>Se você já tem uma conta no Google você precisa habilitá-la para poder utilizar este material.</p>
 
   <p>Neste momento você está acessando este material usando a conta <b><spam id='userEmail1'></spam></b>. Se este não é o seu e-mail <a onClick="handleAuthClick()">clique aqui</a>. Para verificar se a sua conta já foi liberada para acessar este eBook clique no botão abaixo.</p>
 

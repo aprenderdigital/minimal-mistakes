@@ -5,7 +5,9 @@ excerpt: "Apresentação e requisitos do eBook Livros Personalizados."
 last_modified_at: 2019-05-16T15:53:52-04:00
 redirect_from:
   - /theme-setup/
+layout: single
 toc: true
+
 ---
 
 ## Bem-vindo
