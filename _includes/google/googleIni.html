@@ -70,19 +70,39 @@
     function criarArquivosCurso(idBookPersonalizar) {
       console.log("criando arquivos do curso");
       var body = { 'title': nomePlanilhaCurso };
-      var request = gapi.client.drive.files.copy({
+      var request1 = gapi.client.drive.files.copy({
         'fileId': "104mje7ci5UjtuOio8vGTKcFbgp2MufaP7Nl3TxaQ7O4",
         'name': nomePlanilhaCurso,
         'resource': body,
         'parents': [idBookPersonalizar]
       });
-      request.execute(function (resp) {
-        console.log('Copy ID: ' + resp.id);
+      request1.execute(function (resp) {
+        console.log('Planilha links ID: ' + resp.id);
       });
+      var request2 = gapi.client.drive.files.copy({
+        'fileId': "1fIZXY7X7aMpaiOG40KxcYICbGSq-_Ku9ZmSpto3Ihwc", 
+        'name': "ONDG v.1",
+        'resource': body,
+        'parents': [idBookPersonalizar]
+      });
+      request2.execute(function (resp) {
+        console.log('ONDG ID: ' + resp.id);
+      });
+      var request3 = gapi.client.drive.files.copy({
+        'fileId': "14lkao4xVXygiFAKcK477S7vEzTS5gUXtrnW7CW6KLP0",
+        'name': "PDF para a turma (124578) v.1",
+        'resource': body,
+        'parents': [idBookPersonalizar]
+      });
+      request3.execute(function (resp) {
+        console.log('PDF ID: ' + resp.id);
+      });
+
+
     }
 
     function criarCurso(idAprenderDigital) {
-      console.log("criando diretório eBookPersonalizar");
+      console.log("verificando diretório eBookPersonalizarV1");
       var nome = "eBookPersonalizarV1";
       gapi.client.drive.files.list({q: "name='" + nome + "'"}) 
         .then(function(response) {
