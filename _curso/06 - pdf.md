@@ -77,7 +77,7 @@ function expandIframe() {
 </spam>
 
 <br>
-Depois do preenchimento, você deve usar a opção de menu chamada **GERAR**, presente na planilha acima, para gerar os PDFs. Use o botão <i class="fas fa-external-link-alt"></i>, que fica no topo da planilha, para abri-la expandida em uma nova aba do navegador para facilitar o acesso ao menu <b>GERAR</b> e a opção <b>Gerar PDfs</b>.
+Depois do preenchimento, você deve usar a opção de menu chamada **GERAR**, presente na planilha acima, para gerar os PDFs. Use o botão <i class="fas fa-external-link-alt"></i>, que fica no topo da planilha, para abri-la expandida em uma nova aba do navegador para facilitar o acesso ao menu <b>GERAR</b> e a opção <b>Gerar PDfs</b>. A primeira vez que você executar este menu o Google vai solicitar que você **autorize esta execução**.
 
 **Nota**: O tempo de geração está relacionado ao número de alunos na planilha. Cada livro leva cerca de 10 segundos para gerar. Acompanhe a geração por meio das mensagens apresentadas na base da planilha. 
 {: .notice--warning}
