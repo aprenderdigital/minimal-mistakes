@@ -1,54 +1,34 @@
 ---
-title: "Geração para uma turma"
-permalink: /curso/turma/
-excerpt: "Gerando livros para toda uma turma"
-last_modified_at: 2019-09-23T15:47:50-04:00
+title: "Gerando PDF - O Nome da Gente"
+permalink: /curso/pdf/
+excerpt: "Gerando PDF com a versão personalizada do livro O NOME DA GENTE"
+last_modified_at: 2019-10-07T15:09:50-04:00
 toc: true
 google: true
----
+--- 
 
 {% include check-registration.html %} 
 {% include find-file.html %}
 
 
-No capítulo [Geração individual]({{site.url}}/curso/individual) mostramos como gerar o livro para um único aluno. Neste capítulo também vamos usar o livro **O Nome da Gente** entretanto, gerando de uma única vez livros personalizados para toda uma turma.
+No capítulo [Geração para uma turma]({{site.url}}/curso/turma/) mostramos como gerar de uma única vez livros personalizados para toda uma turma. Os livros foram gerandos na forma de links para permitir o seu compartilhamento via WhatsApp, Messenger ou e-mail.
+
+Neste capítulo mostramos como gerar o livro de cada aluno da turma no formato PDF. Este formato poderá ser usado para que o livro possa ser lido offline (sem conexão com a Internet) ou impresso para uso em sala de aula.
 
 **Nota:** O livro **O Nome da Gente** faz parte do banco de livros online e gratuito que é mantido pela nossa equipe do **APRENDER.digital** como parte do projeto **Dia Nacional do Livro Infantil ([DNLI](https://dnli.aprender.digital){:target="_blank"})**.
 {: .notice--warning}
 
 Continue lendo abaixo. Vamos mostrar para você como isso funciona. 
 
-## Links para os livros
-Não sei se no capítulo em que apresentamos a [Geração individual]({{site.url}}/curso/individual) dos livros você observou o conteúdo do link gerado em cada livro personalizado. 
-
-Por exemplo, para o nome "JULIA" o link do livro gerado é o seguinte:
-
-> https://livros.aprender.digital/ONomeDaGente.html?nome=**JULIA**&deleDela=**dela**
-
-Isso nos permite um truque. Para gerarmos livros com nomes diferentes, basta criarmos links com parâmetros diferentes. :wink:  Por exemplo, livros para a Ana, Paula e Ari podem ser gerados diretamente por meio dos links: 
-
-> .../ONomeDaGente.html?nome=**ANA**&deleDela=**dela**
-
-> .../ONomeDaGente.html?nome=**PAULA**&deleDela=**dela**
-
-> .../ONomeDaGente.html?nome=**ARI**&deleDela=**dele**
-
-Achou complicado? Não se preocupe. Preparamos para você uma planilha que vai gerar estes links automaticamente para você. :smile: 
-
-Confira no tópico apresentado a seguir.
-
-## Planilha para geração dos links
-Preparamos uma planilha muito especial que vai gerar *automagicamente* :wink: *links* do livro **O Nome da Gente** para todos os alunos das suas turmas.
+## Planilha para geração dos PDFs
+Preparamos uma planilha muito especial que vai gerar *automagicamente* :wink: *PDF* do livro **O Nome da Gente** para todos os alunos das suas turmas.
 
 
-Para que o processo de geração aconteça, você vai ter que fornecer alguns dados dos seus alunos:
-- email (pais ou responsáveis caso os livros sejam compartilhados por e-mail);
-- telefone (opcional);
-- De (nome do professor que vai aparecer no livro);
+Para que o processo de geração aconteça, você vai ter que fornecer os dados para geração destes livros:
 - Para (nome do aluno que vai receber o livro - usar no máximo 15 letras);
 - gênero (dele ou dela).
 
-As colunas <b>link</b> e <b>link resumido</b> são gerados automaticamente pela planilha.
+A coluna <b>Link para o Google Drive</b>será gerada automaticamente. Ela contém a localização do PDF dentro do seu Google Drive.
 
 Preencha diretamente na planilha abaixo os dados dos alunos da sua turma. 
 
@@ -56,7 +36,7 @@ Preencha diretamente na planilha abaixo os dados dos alunos da sua turma.
 var linkPlanilha;
 
 function carregarPlanilha() {
-  checkFile(nomePlanilhaCurso, callbackCarregarPlanilha);
+  checkFile(nomePlanilhaPDF, callbackCarregarPlanilha);
 }
 function callbackCarregarPlanilha(s) {
 
@@ -97,9 +77,17 @@ function expandIframe() {
 </spam>
 
 <br>
-Depois do preenchimento, você deve usar a opção de menu chamada **LINK**, presente na planilha acima, para gerar os links. Use o botão <i class="fas fa-external-link-alt"></i>, que fica no topo da planilha, para abri-la expandida em uma nova aba do navegador para facilitar o acesso ao menu <b>LINK</b> e a opção <b>Gerar links</b>.
+Depois do preenchimento, você deve usar a opção de menu chamada **GERAR**, presente na planilha acima, para gerar os PDFs. Use o botão <i class="fas fa-external-link-alt"></i>, que fica no topo da planilha, para abri-la expandida em uma nova aba do navegador para facilitar o acesso ao menu <b>GERAR</b> e a opção <b>Gerar PDfs</b>.
+
+**Nota**: O tempo de geração está relacionado ao número de alunos na planilha. Cada livro leva cerca de 10 segundos para gerar. Acompanhe a geração por meio das mensagens apresentadas na base da planilha. 
+{: .notice--warning}
+
+Ao término do processo de geração você encontrará os aquivos PDF dentro do seu Google Drive em uma pasta chamada **O NOME DA GENTE**. A coluna <b>Link para o Google Drive</b> contém um link que abre cada um dos PDFs gerados no seu Google Drive.
+
+Para fazer o *download* de todos os livros gerados, use o botão direito do mouse sobre a pasta **O NOME DA GENTE** no seu Google Drive.
+
 <p align="middle">
-<img  width="400" height="100%" src="/assets/images/curso/menu_link.gif">
+<img  width="400" height="100%" src="/assets/images/curso/menu_gdrive download+seta.jpg">
 </p>
 
 ## Mais de uma turma

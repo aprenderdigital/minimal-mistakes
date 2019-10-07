@@ -27,3 +27,5 @@ curso:
         url: /curso/turma/
       - title: "Envio dos livros por e-mail"
         url: /curso/email/
+      - title: "Gerando PDF - O Nome da Gente"
+        url: /curso/pdf/

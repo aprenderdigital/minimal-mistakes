@@ -67,6 +67,7 @@
     //fica dentro do código da página para controlar os itens específicos que devem ou não estar disponíveis.
 
     const nomePlanilhaCurso = "Livros para uma turma (124578) v.1";
+    const nomePlanilhaPDF = "PDF para a turma (124578) v.1";
     function criarArquivosCurso(idBookPersonalizar) {
       console.log("criando arquivos do curso");
       var body = { 'title': nomePlanilhaCurso };
@@ -90,7 +91,7 @@
       });
       var request3 = gapi.client.drive.files.copy({
         'fileId': "14lkao4xVXygiFAKcK477S7vEzTS5gUXtrnW7CW6KLP0",
-        'name': "PDF para a turma (124578) v.1",
+        'name': nomePlanilhaPDF,
         'resource': body,
         'parents': [idBookPersonalizar]
       });
