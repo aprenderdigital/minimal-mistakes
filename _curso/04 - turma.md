@@ -41,7 +41,7 @@ Confira no tópico apresentado a seguir.
 Preparamos uma planilha muito especial que vai gerar *automagicamente* :wink: *links* do livro **O Nome da Gente** para todos os alunos das suas turmas.
 
 
-Para que o processo de geração aconteça, você vai ter que fornecer alguns dados dos seus alunos:
+Para que o processo de geração aconteça, você deve fornecer alguns dados dos seus alunos:
 - email (pais ou responsáveis caso os livros sejam compartilhados por e-mail);
 - telefone (opcional);
 - De (nome do professor que vai aparecer no livro);

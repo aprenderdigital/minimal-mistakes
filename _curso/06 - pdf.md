@@ -24,11 +24,11 @@ Continue lendo abaixo. Vamos mostrar para você como isso funciona.
 Preparamos uma planilha muito especial que vai gerar *automagicamente* :wink: *PDF* do livro **O Nome da Gente** para todos os alunos das suas turmas.
 
 
-Para que o processo de geração aconteça, você vai ter que fornecer os dados para geração destes livros:
+Para que o processo de geração aconteça, você deve fornecer os dados para geração destes livros:
 - Para (nome do aluno que vai receber o livro - usar no máximo 15 letras);
 - gênero (dele ou dela).
 
-A coluna <b>Link para o Google Drive</b>será gerada automaticamente. Ela contém a localização do PDF dentro do seu Google Drive.
+A coluna <b>Link para o Google Drive</b> será gerada automaticamente. Ela contém a localização do PDF dentro do seu Google Drive.
 
 Preencha diretamente na planilha abaixo os dados dos alunos da sua turma. 
 
@@ -82,7 +82,7 @@ Depois do preenchimento, você deve usar a opção de menu chamada **GERAR**, pr
 **Nota**: O tempo de geração está relacionado ao número de alunos na planilha. Cada livro leva cerca de 10 segundos para gerar. Acompanhe a geração por meio das mensagens apresentadas na base da planilha. 
 {: .notice--warning}
 
-Ao término do processo de geração você encontrará os aquivos PDF dentro do seu Google Drive em uma pasta chamada **O NOME DA GENTE**. A coluna <b>Link para o Google Drive</b> contém um link que abre cada um dos PDFs gerados no seu Google Drive.
+Ao término do processo de geração você encontrará os arquivos PDF dentro do seu Google Drive em uma pasta chamada **O NOME DA GENTE**. A coluna <b>Link para o Google Drive</b> contém um link que abre cada um dos PDFs gerados no seu Google Drive.
 
 Para fazer o *download* de todos os livros gerados, use o botão direito do mouse sobre a pasta **O NOME DA GENTE** no seu Google Drive.
 
