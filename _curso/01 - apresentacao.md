@@ -26,6 +26,7 @@ Este eBook tem como foco principal educadores que trabalham com alunos em fase d
   - Conta Gmail;
   - Conta Facebook.
 
+## Comentários
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0&appId=508861006604984&autoLogAppEvents=1"></script>
 <div class="fb-comments" data-href="https://personalizar.aprender.digital/curso/apresentacao/" data-width="" data-numposts="10"></div>

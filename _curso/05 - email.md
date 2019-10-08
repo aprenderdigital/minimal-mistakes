@@ -47,3 +47,8 @@ Para enviar os links por e-mail você deverá realizar os passos indicados abaix
 
 **Dica:** Coloque como último e-mail da turma o seu endereço de e-mail. Desta forma você receberá uma cópia do e-mail tendo a confirmação que o processode envio foi totalmente concluído.
 {: .notice--warning}
+
+## Comentários
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0&appId=508861006604984&autoLogAppEvents=1"></script>
+<div class="fb-comments" data-href="https://personalizar.aprender.digital/curso/email/" data-width="" data-numposts="10"></div>

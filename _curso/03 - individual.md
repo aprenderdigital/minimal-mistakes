@@ -70,7 +70,7 @@ Execute os passos apresentados a seguir usando a janela do livro que apresentamo
 
 Pronto! Você copiou o link para acesso ao livro gerado. Agora você deve ir até o WhatsApp, Messenger, Facebook, e-mail, etc. para colar (botão direito do mouse + Colar) e enviar o livro gerado.
 
-
-
-
-
+## Comentários
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0&appId=508861006604984&autoLogAppEvents=1"></script>
+<div class="fb-comments" data-href="https://personalizar.aprender.digital/curso/individual/" data-width="" data-numposts="10"></div>

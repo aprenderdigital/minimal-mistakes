@@ -114,3 +114,8 @@ Para preencher os dados da segunda turma, siga os passos abaixo:
 <p align="middle">
 <img  width="400" height="100%" src="/assets/images/curso/duplicar_e_renomear.gif">
 </p>
+
+## Comentários
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0&appId=508861006604984&autoLogAppEvents=1"></script>
+<div class="fb-comments" data-href="https://personalizar.aprender.digital/curso/turma/" data-width="" data-numposts="10"></div>

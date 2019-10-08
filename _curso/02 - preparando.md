@@ -85,3 +85,8 @@ O processo para criar a sua conta é simples. Se quiser ver como se faz, assista
     <p class="notice--danger"><strong>NÃO habilitado:</strong> Verificamos a sua conta e o eBook <strong>NÃO está habilitado</strong>. Entre em contato para regularizar o seu acesso (equipe.aprender.digital@gmail.com).</p>
   </div>
 </div>
+
+## Comentários
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0&appId=508861006604984&autoLogAppEvents=1"></script>
+<div class="fb-comments" data-href="https://personalizar.aprender.digital/curso/preparando/" data-width="" data-numposts="10"></div>
