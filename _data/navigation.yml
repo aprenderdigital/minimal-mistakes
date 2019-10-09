@@ -29,3 +29,15 @@ curso:
         url: /curso/email/
       - title: "Gerando PDF - O Nome da Gente"
         url: /curso/pdf/
+# Links das aulas
+aulas:
+  - title: Introdução
+    children:
+      - title: "Apresentação"
+        url: /aula/apresentacao/
+      - title: "Criando email"
+        url: /aula/email/
+  - title: Gerando os primeiros livros
+    children:
+      - title: "Geração do PDF"
+        url: /aula/pdf/
