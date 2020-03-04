@@ -66,13 +66,13 @@
     //function setSigninStatus(isSignedIn)
     //fica dentro do código da página para controlar os itens específicos que devem ou não estar disponíveis.
 
-    const nomePlanilhaCurso = "Livros para uma turma (124578) v.1";
+    const nomePlanilhaCurso = "Livros para uma turma (124578) v.2";
     const nomePlanilhaPDF = "PDF para a turma (124578) v.1";
     function criarArquivosCurso(idBookPersonalizar) {
       console.log("criando arquivos do curso");
       var body = { 'title': nomePlanilhaCurso };
       var request1 = gapi.client.drive.files.copy({
-        'fileId': "104mje7ci5UjtuOio8vGTKcFbgp2MufaP7Nl3TxaQ7O4",
+        'fileId': "1bubV0MML8Gj6E84N8dl01Q5-ry-U4ZVA0mQ3l9Cbhfc",
         'name': nomePlanilhaCurso,
         'resource': body,
         'parents': [idBookPersonalizar]
